@@ -1,5 +1,5 @@
 class Restaurant < ApplicationRecord
-  has_many :review, dependent: :destroy
+  has_many :reviews, dependent: :destroy
 
   validates :address, presence: {message: "Il manque une adresse"}
   validates :name, presence: true, uniqueness: true
